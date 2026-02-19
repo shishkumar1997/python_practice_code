@@ -510,6 +510,26 @@ for i in s:
 
 # 20+++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
+class Studentinfo():
+    def __init__(self,name,mark):
+        self.name=name
+        self.mark=mark
+        
+    def grade(self):
+        if 30 >= self.mark >= 0:
+            return "C"
+        elif 60 >= self.mark >= 30:
+            return "B"
+        elif 100 >= self.mark >= 60:
+            return "A"
+        
+    def display(self):
+        print(f'name : {self.name}')
+        print(f'grade : {self.grade()}')
+        print(f'mark : {self.mark}')
+    
+st=Studentinfo('Ashish',91)
+print(st.display())
 # 21++++++++++++++++++++++++++++++++++++++++++++++++++++= 
 
 # 22+++++++++++++++++++++++++++++++++++++++++++++++++ 
